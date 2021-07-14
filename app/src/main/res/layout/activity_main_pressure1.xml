@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPressure">
+
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="40dp"
+        android:onClick="onClickSaveButton"
+        android:text="Сохранить"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <EditText
+        android:id="@+id/TopText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:hint="Верхнее давление"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/BottomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Нижнее давление"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/TopText"
+        app:layout_constraintTop_toBottomOf="@+id/TopText" />
+
+    <EditText
+        android:id="@+id/PulseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Пульс"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/BottomText"
+        app:layout_constraintTop_toBottomOf="@+id/BottomText" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Тахикардия"
+        app:layout_constraintStart_toStartOf="@+id/PulseText"
+        app:layout_constraintTop_toBottomOf="@+id/PulseText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

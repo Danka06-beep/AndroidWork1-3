@@ -1,0 +1,2 @@
+rootProject.name = "AndroidWork1-3"
+include ':app'
